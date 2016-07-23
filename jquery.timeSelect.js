@@ -159,8 +159,8 @@
         initFooter: function() {
             var $tr = $("<tr>");
             var $labelTd = $("<td colspan=2><p>已选时间</p></td>");
-            var $infoTd = $("<td class='info'colspan=42></td>");
-            var $clearTd = $("<td class='clear' colspan=6><p><button class='clearButton'>撤销所有选项</button></p></td>");
+            var $infoTd = $("<td class='info'colspan=46></td>");
+            var $clearTd = $("<td class='clear' colspan=2><p><button class='clearButton'>重置</button></p></td>");
             $tr.append($labelTd);
             $tr.append($infoTd);
             $tr.append($clearTd);
