@@ -1,0 +1,26 @@
+td {
+    width: 10px;
+    height: 20px;
+    border: 1px gray solid;
+    text-align: center;
+    white-space: nowrap
+}
+
+.span {
+    width: 100%;
+    height: 100%;
+    background: #333B3D;
+    display: inline-block;
+    color: #fff;
+    cursor: pointer;
+}
+
+.checked {
+    background: blue;
+}
+
+tr:last-child >td {
+    text-align: left;
+    border: none;
+    vertical-align: top;
+}
