@@ -3,7 +3,7 @@ A plugin to select time
 ![preview](https://github.com/nummy/timeSelect/blob/master/doc/img/demo.png)
 
 ## Demo
-[timeSelect Demo](http://codepen.io/nummy/pen/jAxyEz)
+[timeSelect Demo](http://codepen.io/nummy/full/jAxyEz/)
 
 ## Installation
 
