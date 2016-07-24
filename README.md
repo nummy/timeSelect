@@ -29,7 +29,7 @@ A plugin to select time
    <script src="timeSelect.js"></script>
    ```
 
-4. add `data-toggle="timeSelect"` to table
+4. Add `data-toggle="timeSelect"` to table
 
    ```html
    <table data-toggle="timeSelect" id="demo"></table>
@@ -41,16 +41,15 @@ A plugin to select time
    $("#demo").timeSelect();
    ```
 
-5. call `getValue` to get selected time:
+5. Call `getValue` to get selected time:
 
    ```javascript
    var data = $("#demo").timeSelect("getValue");
    ```
 
-6. call `setValue` to set selected time:
+6. Call `setValue` to set selected time:
 
    ```javascript
    $("#demo").timeSelect("setValue", data);
    ```
-
    data should be a string , contains only 1 and 0, and the length must be 336 
