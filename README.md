@@ -49,7 +49,7 @@ A plugin to select time
 
 6. call `setValue` to set selected time:
 
-   ```
+   ```javascript
    $("#demo").timeSelect("setValue", data);
    ```
 
