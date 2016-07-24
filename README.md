@@ -2,7 +2,8 @@
 A plugin to select time 
 ![preview](https://github.com/nummy/timeSelect/blob/master/doc/img/demo.png)
 
-## TOC
+## Demo
+[timeSelect Demo](http://codepen.io/nummy/pen/jAxyEz)
 
 ## Installation
 
@@ -54,6 +55,3 @@ A plugin to select time
    ```
    data should be a string , contains only 1 and 0, and the length must be 336 
 
-## Demo
-
-[timeSelect Demo](http://codepen.io/nummy/pen/jAxyEz)
