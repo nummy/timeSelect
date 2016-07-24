@@ -13,21 +13,44 @@ A plugin to select time
 
 1. Include timeSelect StyleSheet
 
-```html
-<link rel="stylesheet" href="timeSelect.css">
-```
+   ```html
+   <link rel="stylesheet" href="timeSelect.css">
+   ```
 
 2. Include jQuery
-```html
-<script src='jQuery.js'></script>
-```
+
+   ```html
+   <script src='jQuery.js'></script>
+   ```
 
 3. Include timeSelect plugin's code
-```html
-<script src="timeSelect.js"></script>
-```
+
+   ```html
+   <script src="timeSelect.js"></script>
+   ```
 
 4. add `data-toggle="timeSelect"` to table
-```html
-<table data-toggle="timeSelect"></table>
-```
+
+   ```html
+   <table data-toggle="timeSelect" id="demo"></table>
+   ```
+
+   or call plugin like this:
+
+   ```javascript
+   $("#demo").timeSelect();
+   ```
+
+5. call `getValue` to get selected time:
+
+   ```javascript
+   var data = $("#demo").timeSelect("getValue");
+   ```
+
+6. call `setValue` to set selected time:
+
+   ```
+   $("#demo").timeSelect("setValue", data);
+   ```
+
+   data should be a string , contains only 1 and 0, and the length must be 336 
