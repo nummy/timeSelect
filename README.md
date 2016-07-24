@@ -53,3 +53,7 @@ A plugin to select time
    $("#demo").timeSelect("setValue", data);
    ```
    data should be a string , contains only 1 and 0, and the length must be 336 
+
+## Demo
+
+[timeSelect Demo](http://codepen.io/nummy/pen/jAxyEz)
