@@ -44,7 +44,6 @@
                     });
                 }
                 that.displayInfo();
-                console.log(that.getValue());
             });
 
             $("input[class^=y_]").change(function(index) {
@@ -80,7 +79,6 @@
                     });
                 }
                 that.displayInfo();
-                console.log(that.getValue());
             });
 
             $("div.span").click(function(index) {
@@ -95,7 +93,6 @@
                 }
                 that.cacheCheck(xy);
                 that.displayInfo();
-                console.log(that.getValue());
             });
 
             $("button.clearButton").click(function() {
@@ -191,7 +188,6 @@
             }
             for (var j = 0; j < 48; j++) {
                 if (this.isColumnAllChecked(j + 1)) {
-                    console.log(1);
                     $("input[class=x_" + (j+1) + "_0" + "]").prop("checked", true);
                 }
             }
@@ -233,11 +229,8 @@
             if (str.length != 336) {
                 return arr;
             } else {
-                console.log(str);
                 for (var i = 0; i < 7; i++) {
-                    console.log(i);
                     temp = str.substring(i * 48, i*48 + 48);
-                    console.log(temp);
                     for (var j = 0; j < temp.length; j++) {
                         arr[i][j] = temp[j];
                     }
@@ -325,8 +318,6 @@
         setValue: function(str) {
             this.clear();
             var arr = this.stringToArray(str);
-            console.log(arr.length);
-            console.log(JSON.stringify(arr));
             for (var i = 0; i < arr.length; i++) {
                 for (var j = 0; j < arr[i].length; j++) {
                     if(arr[i][j] == 1){
@@ -353,6 +344,10 @@
             }
             return result;
         },
+        destroy: function(){
+            this.$elem.empty();
+            this.$elem.removeData("timeSelect");
+        }
     }
 
     $.fn.timeSelect = function(options) {
