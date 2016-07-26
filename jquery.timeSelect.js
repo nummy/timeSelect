@@ -283,6 +283,8 @@
                     timeStr.push("</p>" + k + ":" + that.getTimeSection(v).join(",") + "</p>");
                 });
                 $("td.info").html(timeStr.join(""));
+            }else{
+                $("td.info").html("");
             }
         },
         minutesToHour: function(minutes) {
