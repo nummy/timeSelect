@@ -282,6 +282,8 @@
                     timeStr.push("</p>" + k + ":" + that.getTimeSection(v).join(",") + "</p>");
                 });
                 this.$elem.find("td.info").html(timeStr.join(""));
+            }else{
+                this.$elem.find("td.info").html("");
             }
         },
         minutesToHour: function(minutes) {
